@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/upload': {
-        target: 'http://localhost:4000',
+        target: 'https://new-folder-8-f6nh.vercel.app/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/upload/, '/upload')
       }
