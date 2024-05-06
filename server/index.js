@@ -13,6 +13,9 @@ mongoose
       console.log("database not connected")
   }
   )
+  app.get("/",(req,res)=>{
+    res.send("Welcome to Hemant's world");
+  })
 
   app.post("/upload", async(req,res)=>{
     const {name, fname, mname} = req.body;
